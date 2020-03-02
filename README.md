@@ -15,7 +15,7 @@
 作为比对，新增两个纯html页面，`pure-html目录`下  
   ① 打开`a.html`页面，点击`跳转到b页面`链接  
   ② `b.html`页面，点击返回  
-  ③ 正常返回，不收插件影响  
+  ③ 正常返回，不受插件影响  
 
 ## 附上代码：
 [https://gitee.com/Mr-Alex/vue-router-stuck-when-plugins-pending](https://gitee.com/Mr-Alex/vue-router-stuck-when-plugins-pending)
