@@ -1,37 +1,45 @@
-# vue-router-stuck-when-plugins-pending
+# vue-pure-back
+这是个测试项目，在头部加载了faceboock插件，在`public/index.html``第八行`引入。
+测试1：
+① 点击首页的`about页`进入`about页`，此时`network`看到的`facebook插件`还在`pending状态`，
+② 点击`about页`的返回，页面卡住，但是`url`已经变成`home页`
+③ 等待`facebook` `pending状态`变化后，页面恢复；
 
-#### 介绍
-vue项目加载第三方资源时，页面返回卡住
+测试2：
+① 回到首页，刷新
+② 重复测试1的步骤①
+③ 点击点击链接到home页
+④ 正常条状，没有卡住
 
-#### 软件架构
-软件架构说明
+## Project setup
+```
+yarn install
+```
 
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
-#### 安装教程
+### Compiles and minifies for production
+```
+yarn run build
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### Run your tests
+```
+yarn run test
+```
 
-#### 使用说明
+### Lints and fixes files
+```
+yarn run lint
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### Run your unit tests
+```
+yarn run test:unit
+```
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
