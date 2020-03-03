@@ -4,7 +4,12 @@
     <div>
       <router-link to="/">首页</router-link>
     </div>
-    <button class="button" @click="$router.go(-1)">返回home页</button>
+    <div>
+      <button class="button" @click="$router.go(-1)">
+        返回home页（router.go(-1)形式）
+      </button>
+    </div>
+    <!-- <button class="button" @click="$router.back()">返回home页</button> -->
   </div>
 </template>
 

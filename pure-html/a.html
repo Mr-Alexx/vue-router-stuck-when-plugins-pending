@@ -3,6 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script>
+    window.addEventListener("load", () => {
+      console.log("this is window onload event");
+    });
+  </script>
+  <script type="text/Javascript" defer>
+    console.log('this is a defer script')
+  </script>
+  <script type="text/javascript" async>
+    console.log('this is a async script')
+  </script>
+  <script type="text/javascript">
+    console.log('this is a normal script')
+  </script> -->
   <script>
     !function(f, b, e, v, n, t, s){
       if (f.fbq) return;
@@ -40,5 +54,14 @@
 </head>
 <body>
   <a href="./b.html" class="button">跳转到b页面</a>
+
+  <button onclick="handleClick()" class="button">
+    pushState方法触发
+  </button>
+  <script>
+    function handleClick () {
+      history.pushState(null, null, 'test')
+    }
+  </script>
 </body>
 </html>
